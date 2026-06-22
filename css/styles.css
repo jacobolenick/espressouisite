@@ -47,25 +47,6 @@ a {
   text-decoration: none;
 }
 
-.hero-cup {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: min(50vw, 580px);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  z-index: 0;
-}
-
-.hero-cup img {
-  width: 100%;
-  max-width: none;
-  height: auto;
-  opacity: 0.09;
-}
-
 .site-header {
   position: relative;
   z-index: 10;
@@ -75,7 +56,7 @@ a {
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 28px 32px;
+  padding: 20px 32px 12px;
 }
 
 .logo img {
@@ -114,11 +95,10 @@ main {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 32px 80px;
-  min-height: calc(100vh - 84px);
+  padding: 12px 32px 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -128,11 +108,29 @@ main {
   margin-bottom: 48px;
 }
 
+.hero-cup {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(50vw, 580px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  z-index: 0;
+}
+
+.hero-cup img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  opacity: 0.09;
+}
+
 .hero-content {
   position: relative;
   z-index: 1;
-  width: 100%;
-  max-width: none;
+  max-width: 900px;
 }
 
 .eyebrow {
@@ -154,7 +152,7 @@ main {
 }
 
 .hero-lede {
-  max-width: none;
+  max-width: 640px;
   margin-bottom: 32px;
   font-size: 18px;
   color: var(--gray-400);
@@ -379,7 +377,7 @@ main {
   .site-header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px 20px;
+    padding: 20px 20px 8px;
   }
 
   .site-nav {
@@ -391,13 +389,18 @@ main {
     padding: 8px 20px 64px;
   }
 
-  .hero-top {
-    margin-bottom: 40px;
+  .hero-content {
+    max-width: 88%;
+  }
+
+  .hero-lede {
+    max-width: 100%;
   }
 
   .hero-cup {
-    width: 60vw;
-    top: -8px;
+    width: min(62vw, 280px);
+    top: 0;
+    right: -12px;
   }
 
   .customize {
