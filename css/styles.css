@@ -142,8 +142,6 @@ main {
   overflow: hidden;
   --cup-x: 50%;
   --cup-y: 50%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 100%);
-  border-radius: calc(var(--radius-xl) + 8px);
 }
 
 .hero-cup-bg {
@@ -184,7 +182,7 @@ main {
   width: min(88%, 640px);
   max-width: none;
   transform: translate(-50%, -50%);
-  opacity: 0.12;
+  opacity: 0.22;
 }
 
 .hero-content--static-cup .hero-cup-bg img {
